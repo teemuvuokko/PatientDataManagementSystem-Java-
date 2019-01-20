@@ -5,5 +5,5 @@ Programs purpose is simply to show, add (and in future to update and delete data
 
 # To start using Patient Data Management System
 
-You need to import the sql file found in the reporsitory to your own database server and define the connection in file DatabaseConnector.java
+You need to import the sql-file found in the reporsitory to your own database server and define the connection in file DatabaseConnector.java
 to match your databases url. After that you need to add a reference for the mysql-connnector-java.jar connector. After that you should be ready to go.
