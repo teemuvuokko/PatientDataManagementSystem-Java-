@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patientmanagementsystem.TableController">
+   <children>
+      <TableView fx:id="table" layoutX="104.0" layoutY="99.0" prefHeight="750.0" prefWidth="1085.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="177.0" text="Name" />
+            <TableColumn fx:id="col_address" prefWidth="277.0" text="Address" />
+            <TableColumn fx:id="col_doa" prefWidth="134.0" text="DoA" />
+            <TableColumn fx:id="col_injury" prefWidth="118.0" text="Injury" />
+            <TableColumn fx:id="col_doctor" prefWidth="122.0" text="Doctor" />
+            <TableColumn fx:id="col_medicalprocedures" prefWidth="190.0" text="Medical procedures" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="25.0" prefHeight="27.0" prefWidth="205.0" text="Add a new patient" />
+      <Label layoutX="14.0" layoutY="152.0" prefHeight="27.0" prefWidth="154.0" text="Name" />
+      <TextField fx:id="textfieldName" layoutX="16.0" layoutY="189.0" prefHeight="39.0" prefWidth="232.0" />
+      <Label layoutX="14.0" layoutY="228.0" prefHeight="27.0" prefWidth="224.0" text="Address" />
+      <TextField fx:id="textfieldAddress" layoutX="16.0" layoutY="266.0" prefHeight="39.0" prefWidth="232.0" />
+      <Label layoutX="14.0" layoutY="408.0" prefHeight="27.0" prefWidth="154.0" text="Injury" />
+      <Label layoutX="14.0" layoutY="325.0" prefHeight="27.0" prefWidth="154.0" text="Date of admission" />
+      <TextField fx:id="textfieldInjury" layoutX="14.0" layoutY="441.0" prefHeight="39.0" prefWidth="232.0" />
+      <TextField fx:id="textfieldDoctor" layoutX="16.0" layoutY="522.0" prefHeight="39.0" prefWidth="232.0" />
+      <Label layoutX="14.0" layoutY="489.0" prefHeight="27.0" prefWidth="154.0" text="Doctor" />
+      <Button layoutX="10.0" layoutY="650.0" mnemonicParsing="false" onAction="#addPatient" prefHeight="39.0" prefWidth="116.0" text="Save" />
+      <Label layoutX="14.0" layoutY="569.0" text="Coming medical procedures" />
+      <TextField fx:id="textfieldMedicalprocedures" layoutX="16.0" layoutY="596.0" prefHeight="39.0" prefWidth="232.0" />
+      <Label layoutX="14.0" layoutY="79.0" prefHeight="27.0" prefWidth="154.0" text="Patient Number" />
+      <TextField fx:id="textfieldId" layoutX="12.0" layoutY="106.0" prefHeight="39.0" prefWidth="232.0" />
+      <Button layoutX="10.0" layoutY="689.0" mnemonicParsing="false" onAction="#loadPatientData" prefHeight="39.0" prefWidth="232.0" text="Load" />
+      <Button fx:id="Reset" layoutX="126.0" layoutY="650.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="39.0" prefWidth="116.0" text="Reset" />
+      <DatePicker fx:id="textfieldDoa" layoutX="16.0" layoutY="356.0" prefHeight="39.0" prefWidth="232.0" />
+      
+   </children>
+</AnchorPane>
