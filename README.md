@@ -1,4 +1,4 @@
-# PatientDataManagement
+# Patient Data Management System
 
 Patient data management system is a program made with Java, gui made with JavaFX and for storing the data we are using mySQL as our database.
 Programs purpose is simply to show, add (and in future to update and delete data) in graphical user interface made with JavaFX.
